@@ -2,7 +2,7 @@ import { useState } from "react";
 import { deleteActivity } from "../api/activities";
 import { useAuth } from "../auth/AuthContext";
 
-export default function ActivityList({ activities }) {
+export default function ActivityList({ activities, syncActivities }) {
   return (
     <ul>
       {activities.map((activity) => (

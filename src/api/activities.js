@@ -32,6 +32,7 @@ export async function createActivity(token, activity) {
     },
     body: JSON.stringify(activity),
   });
+  console.log(response);
 
   if (!response.ok) {
     const result = await response.json();
