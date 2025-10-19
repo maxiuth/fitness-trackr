@@ -28,11 +28,11 @@ export default function ActivityForm({ syncActivities }) {
       <form action={tryCreateActivity}>
         <label>
           Name
-          <input type="text" name="name" />
+          <input type="text" name="name" required/>
         </label>
         <label>
           Description
-          <input type="text" name="description" />
+          <input type="text" name="description" required/>
         </label>
         <button>Add activity</button>
       </form>
